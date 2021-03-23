@@ -1,2 +1,57 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<head>
+<div class="container-logo">
+  <img class="logo" src="https://res.cloudinary.com/titavon/image/upload/v1616018538/Logo_gcgcpl.png">
+</div>
+<!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #003157">
+    <!--<a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>-->
+    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+      <ul class="navbar-nav d-flex justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><%=link_to "Greeting", greetings_path%></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link"><%=link_to "News", news_index_path%></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link">Vision</a>
+        </li>
+        <li class="nav-item contact">
+          <a class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!--end-->
+</head>
+
+<body class="page-body">
+  <div class="container" id="MainBackground">
+    <%= render 'slide.show' %>
+    <div class="Newest-events">
+      <!--<img class="line-left" src="https://res.cloudinary.com/titavon/image/upload/v1616041002/Vector_skcfto.png">-->
+      <h2>Newest Events</h2>
+      <!--<img class="line-right" src="https://res.cloudinary.com/titavon/image/upload/v1616041002/Vector_skcfto.png">-->
+      <div class="comtainer-events d-flex justify-content-center">
+        <img src="https://res.cloudinary.com/titavon/image/upload/v1616028678/dresdner-altstadt_umb8qp.jpg" class="rounded float-left" alt="...">
+        <img src="https://res.cloudinary.com/titavon/image/upload/v1616028678/dresdner-altstadt_umb8qp.jpg" class="rounded float-center" alt="...">
+        <img src="https://res.cloudinary.com/titavon/image/upload/v1616028678/dresdner-altstadt_umb8qp.jpg" class="rounded float-right" alt="...">
+      </div>
+    </div>
+    <div class="Highlights">
+      <h2>Highlights<h2>
+      <div class="highlight-container">
+        <img src="https://res.cloudinary.com/titavon/image/upload/v1616028678/dresdner-altstadt_umb8qp.jpg" class="Round-Picture" alt="...">
+      </div>
+    </div>
+  </div>
+</body>
