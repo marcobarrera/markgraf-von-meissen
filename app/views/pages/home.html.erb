@@ -11,22 +11,22 @@
     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
       <ul class="navbar-nav d-flex justify-content-center">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#"><%= link_to "Home", root_path%> <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Greeting</a>
+          <a class="nav-link"><%= link_to "Greeting", greetings_path%></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">News</a>
+          <a class="nav-link"><%= link_to "News", news_index_path%></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">History</a>
+          <a class="nav-link"><%= link_to "History", histories_path%></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link">Vision</a>
+          <a class="nav-link"><%= link_to "Vision", visions_path%></a>
         </li>
         <li class="nav-item contact">
-          <a class="nav-link">Members</a>
+          <a class="nav-link"><%= link_to "Members", members_path%></a>
         </li>
       </ul>
     </div>
