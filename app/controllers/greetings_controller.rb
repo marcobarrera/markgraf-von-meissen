@@ -1,5 +1,5 @@
 class GreetingsController < ApplicationController
   def index
-    @greetings = Greeting.all
+    #@greetings = Greeting.all
   end
 end

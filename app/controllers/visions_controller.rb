@@ -1,5 +1,5 @@
 class VisionsController < ApplicationController
   def index
-    @visions = Vision.all
+    #@visions = Vision.all
   end
 end
